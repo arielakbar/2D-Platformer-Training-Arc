@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void FixedUpdate ()
+    void FixedUpdate()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         Debug.Log(crouch);
